@@ -10,13 +10,13 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
-public class RecipeController {
+public class IngredientController {
     @Autowired
-    RecipeService recipeService;
+    IngredientService ingredientService;
 
-    @GetMapping("/recipes")
-    public List<Recipe> getAll(@RequestParam(required = false) String title) {
-        return recipeService.getAll();
+    @GetMapping("/ingredients")
+    public List<Ingredient> getAll(@RequestParam(required = false) String title) {
+        return ingredientService.getAll();
     }
 
 
