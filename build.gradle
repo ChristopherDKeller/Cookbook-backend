@@ -25,3 +25,12 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'org.springframework.boot:spring-boot-gradle-plugin:8.4.0'
+	}
+}
