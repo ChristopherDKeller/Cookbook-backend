@@ -12,6 +12,9 @@ public class Ingredient {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "unit")
+    private String unit;
+
     public Ingredient(Long i, String paprika) {
     }
     public Ingredient() {
@@ -31,5 +34,13 @@ public class Ingredient {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 }
