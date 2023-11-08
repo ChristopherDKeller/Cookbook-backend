@@ -19,6 +19,13 @@ public class Recipe {
     @Column(name = "instructions")
     private String instructions;
 
+    /*public Recipe(long id, String title, String description, String instructions) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.instructions = instructions;
+    }*/
+
     public long getId() {
         return id;
     }
