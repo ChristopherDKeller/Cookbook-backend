@@ -19,12 +19,11 @@ public class Recipe {
     @Column(name = "instructions")
     private String instructions;
 
-    /*public Recipe(long id, String title, String description, String instructions) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.instructions = instructions;
-    }*/
+    @Column(name = "servings")
+    private int servings;
+
+    @Column(name = "time")
+    private int time;
 
     public long getId() {
         return id;
@@ -56,5 +55,21 @@ public class Recipe {
 
     public void setInstructions(String instructions) {
         this.instructions = instructions;
+    }
+
+    public int getServings() {
+        return servings;
+    }
+
+    public void setServings(int servings) {
+        this.servings = servings;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
     }
 }

@@ -17,6 +17,7 @@ public class Ingredient {
 
     public Ingredient(Long i, String paprika) {
     }
+
     public Ingredient() {
     }
 

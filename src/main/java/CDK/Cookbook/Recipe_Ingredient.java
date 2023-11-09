@@ -6,15 +6,15 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "recipe_ingredient")
+@IdClass(Recipe_IngredientId.class)
 public class Recipe_Ingredient {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
 
+    @Id
     @ManyToOne
-    @JoinColumn(name = "recipe_id")
+    @JoinColumn(name = "recepe_id")
     private Recipe recipe;
 
+    @Id
     @ManyToOne
     @JoinColumn(name = "ingredient_id")
     private Ingredient ingredient;
@@ -46,11 +46,4 @@ public class Recipe_Ingredient {
         this.quantity = quantity;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }
