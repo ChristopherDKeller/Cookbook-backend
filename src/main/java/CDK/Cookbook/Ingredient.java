@@ -15,9 +15,6 @@ public class Ingredient {
     @Column(name = "unit")
     private String unit;
 
-    public Ingredient(Long i, String paprika) {
-    }
-
     public Ingredient() {
     }
 

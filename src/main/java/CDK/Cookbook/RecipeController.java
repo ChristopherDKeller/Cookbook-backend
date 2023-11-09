@@ -15,6 +15,11 @@ public class RecipeController {
         return recipeService.getAll();
     }
 
+    @GetMapping("/recipes/{id}")
+    public Recipe get(@PathVariable Long id) {
+        return recipeService.get(id);
+    }
+
     @PostMapping("/recipes")
     public void create(@RequestBody Recipe recipe) {
         recipeService.save(recipe);

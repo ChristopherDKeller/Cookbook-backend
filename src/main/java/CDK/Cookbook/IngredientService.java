@@ -12,8 +12,8 @@ public class IngredientService {
     @Autowired
     IngredientRepository ingredientRepository;
 
-    public Ingredient save(Ingredient ingredient){
-        return ingredientRepository.save(ingredient);
+    public void save(Ingredient ingredient){
+        ingredientRepository.save(ingredient);
     }
 
     public Ingredient get(Long id) {

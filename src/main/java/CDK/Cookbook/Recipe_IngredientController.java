@@ -7,12 +7,18 @@ import java.util.List;
 
 @RestController
 public class Recipe_IngredientController {
+
     @Autowired
     Recipe_IngredientService recipe_ingredientService;
 
     @GetMapping("/recipe_ingredients")
     public List<Recipe_Ingredient> getAll() {
         return recipe_ingredientService.getAll();
+    }
+
+    @GetMapping("/recipe_ingredients/{recipeId}/{ingredientId}")
+    public Recipe_Ingredient get(@PathVariable Long recipeId,@PathVariable Long ingredientId) {
+        return recipe_ingredientService.get(recipeId,ingredientId);
     }
 
     @PostMapping("/recipe_ingredients")

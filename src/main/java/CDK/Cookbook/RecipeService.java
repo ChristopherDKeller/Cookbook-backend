@@ -12,8 +12,8 @@ public class RecipeService {
     @Autowired
     RecipeRepository recipeRepository;
 
-    public Recipe save(Recipe recipe){
-        return recipeRepository.save(recipe);
+    public void save(Recipe recipe){
+        recipeRepository.save(recipe);
     }
 
     public Recipe get(Long id) {

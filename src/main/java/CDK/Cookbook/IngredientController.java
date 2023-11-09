@@ -15,6 +15,11 @@ public class IngredientController {
         return ingredientService.getAll();
     }
 
+    @GetMapping("/ingredients/{id}")
+    public Ingredient get(@PathVariable Long id) {
+        return ingredientService.get(id);
+    }
+
     @PostMapping("/ingredients")
     public void create(@RequestBody Ingredient ingredient) {
         ingredientService.save(ingredient);
