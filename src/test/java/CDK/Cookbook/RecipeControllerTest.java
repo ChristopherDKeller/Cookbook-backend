@@ -1,6 +1,5 @@
 package CDK.Cookbook;
 
-import jakarta.persistence.Column;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +10,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
-import static org.hamcrest.Matchers.equalTo;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;

@@ -11,7 +11,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
-import static org.hamcrest.Matchers.equalTo;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
